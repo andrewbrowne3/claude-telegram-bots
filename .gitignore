@@ -1,0 +1,7 @@
+.env
+*.log
+claude-logs/
+.calendar-system-prompt.txt
+.sent_reminders
+*-bot.pid
+*-bot-session.id
