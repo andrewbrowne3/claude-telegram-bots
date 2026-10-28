@@ -1,6 +1,6 @@
 # claude-telegram-bots
 
-Three bash-based Telegram bots that wrap Claude Code (and OpenCode) so you can drive coding agents and personal APIs from your phone.
+Four bash-based Telegram bots that wrap Claude Code (and OpenCode) so you can drive coding agents and personal APIs from your phone.
 
 ## The bots
 
@@ -9,6 +9,7 @@ Three bash-based Telegram bots that wrap Claude Code (and OpenCode) so you can d
 | `claude-agent.sh` | General-purpose Claude Code bot. Run shell commands, edit files, manage tmux sessions, plan/execute tasks. Supports notifications via Telegram and/or ntfy.sh. |
 | `claude-calendar-bot.sh` | Calendar + finance assistant. Talks to a local Django API on `localhost:2011/api`, manages events, transactions, budgets, etc. Includes a background reminder loop that fires Telegram pings before scheduled events. |
 | `opencode-agent.sh` | Mirror of `claude-agent.sh` but uses [OpenCode](https://github.com/sst/opencode) instead, so you can plug in any model provider (Ollama, OpenAI, etc.). |
+| `ventii-server-bot.sh` | Ops/deploy/data/code bot for the Ventii production server. Runs Claude Code in `~/ventii_react_native`, holds risky actions (deploys, restarts, data writes, merges) with `APPROVAL NEEDED:` until approved, keeps code changes on `bot/*` branches, backs up the SQLite DB before deploys, and alerts on container/site/disk/nginx problems every 5 min. `/status` gives a quick health report. |
 
 ## Setup
 
